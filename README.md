@@ -10,12 +10,12 @@ The information in here is based on [this issue](https://github.com/sabre-io/Bai
 3. Delete default calendar of this user
 3. Open a new browser window in "incognito mode". Share the calendar with this user as "read-only".
      1. login with the user, whos calendar should be shared
-     2. go to https://domain.com/dav.php/calendars/user/calendername/
+     2. go to https://your-baikal-url.com/dav.php/calendars/user/calendername/
      3. at the very bottom is an option to share calendars ("share this ressource")
      4. You need to enter email adress of the new user created in step 2. Enter the email including the mailto: prefix.
 5. Reload the admin panel. Open user/calendar options (Users and resources), if not already open
 6. Click the info button (i) in the calendar section of the new user and copy the URI
-7. Add "?export" (sans quotation marks) at the very end of this URI to enable export of ICS.
+7. Add "?export" (sans quotation marks) at the very end of this URI to enable export of ICS. It will look like this: https://your-baikal-url.com/dav.php/calendars/user/calendarname?export
 
 You may now pass the export-URI and the login credentials of the new user to anyone who wants to view the calendar.
 
