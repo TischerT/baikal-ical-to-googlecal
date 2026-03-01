@@ -1,5 +1,5 @@
 # baikal-ical-to-googlecal
-Short write-up how to import Baikal ical files into google calendar
+How to import Baikal ical files into google calendar
 ---
 The information in here is based on [this issue](https://github.com/sabre-io/Baikal/issues/875) in the Baikal repository. I just summarize it.
 
