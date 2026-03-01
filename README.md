@@ -25,19 +25,19 @@ You may now pass the export-URI and the login credentials of the new user to any
 For this step, you need to ensure that the login method of Baikal is set to "basic". Anything else will result in a login error using the script.
 
 export.php
-        ><?php
-        >$source = "https://username:password@your-baikal-url.com/dav.php/calendars/user/calendarname?export";
-        >$destination = "calendarname.ics";
-        >file_put_contents($destination, file_get_contents($source));
-        >?>
+        > <?php
+        > $source = "https://username:password@your-baikal-url.com/dav.php/calendars/user/calendarname?export";
+        > $destination = "calendarname.ics";
+        > file_put_contents($destination, file_get_contents($source));
+        > ?>
 * username:passwort are the credidential of the new user created above (the one with the read only access to the calendar).
 * Do not add a second "https://" after the @.
 * calendarname.ics can be any name. The file will be saved in the same folder, where export.php is located.
 * export.php can be uploaded/saved in a folder like https://your-baikal-url.com/export on your webserver
 
 Now, create a new crontab either on your own server (if supported), a public provider for crontabs, or any other pc/server you have access to that can run a crontab.
-        ># export the calendar to an ical file every 30 minutes
-        >*/30 * * * * curl --request GET 'https://your-baikal-url.com/export/export.php'
+        > # export the calendar to an ical file every 30 minutes
+        > */30 * * * * curl --request GET 'https://your-baikal-url.com/export/export.php'
 
 
 ## import the ical file into google
