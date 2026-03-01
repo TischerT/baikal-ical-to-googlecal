@@ -50,7 +50,8 @@ Now, create a new crontab either on your own server (if supported), a public pro
 2. On the left side, find the option to add additional calendars
 3. Click the plus symbol and select "By URL"
 4. Enter the URL of your Baikal ics file, e.g. https://your-baikal-url.com/export/calendarname.ics";
-5. Add the calendar. You can apply colors and give it another name afterwards on thr main google calendar page.
+5. Add the calendar. You can apply colors and give it another name afterwards on the main google calendar page.
 
 Google will regularly (no idea how often exactly) check the ical file and reload any changes into your calendar.
-You will not be able to make changes to your Baikal calendar via this method. **It is read only.**
+
+**You will not be able to make changes to your Baikal calendar via this method. It is read only.**
